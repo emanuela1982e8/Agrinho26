@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrinho 2026</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f5fff5;
+    color:#333;
+    line-height:1.6;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#1b5e20;
+    padding:15px;
+    text-align:center;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+header{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+header h1{
+    font-size:4rem;
+    animation:fade 2s;
+}
+
+header p{
+    max-width:800px;
+    font-size:1.4rem;
+    margin-top:20px;
+}
+
+.btn{
+    margin-top:30px;
+    background:#4caf50;
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+section{
+    padding:100px 10%;
+}
+
+h2{
+    color:#1b5e20;
+    text-align:center;
+    margin-bottom:30px;
+    font-size:2.3rem;
+}
+
+.card-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    width:300px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.quiz{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.pergunta{
+    margin-bottom:25px;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.galeria img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.reveal{
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#inicio">Início</a>
+<a href="#agrinho">Agrinho</a>
+<a href="#agro">Agro Forte</a>
+<a href="#sustentavel">Sustentabilidade</a>
+<a href="#tecnologia">Tecnologia</a>
+<a href="#quiz">Quiz</a>
+</nav>
+
+<header id="inicio">
+<h1>🌱 AGRINHO 2026</h1>
+<p>
+Agro forte, futuro sustentável:
+equilíbrio entre produção e meio ambiente.
+</p>
+<a href="#introducao" class="btn">Explorar</a>
+</header>
+
+<section id="introducao" class="reveal">
+<h2>Introdução</h2>
+<p>
+O tema do Agrinho 2026 destaca a importância de conciliar o crescimento da produção agrícola com a preservação do meio ambiente. O objetivo é mostrar que é possível produzir alimentos, gerar empregos e impulsionar a economia sem comprometer os recursos naturais das futuras gerações.
+</p>
+</section>
+
+<section id="agrinho" class="reveal">
+<h2>O que é o Agrinho?</h2>
+<p>
+O Agrinho é um programa educacional que busca desenvolver a cidadania, a responsabilidade social e a consciência ambiental dos estudantes. Por meio de projetos e atividades, incentiva a reflexão sobre temas importantes para a sociedade.
+</p>
+</section>
+
+<section id="agro" class="reveal">
+<h2>🚜 Agro Forte</h2>
+
+<div class="card-container">
+
+<div class="card">
+<h3>Produção de Alimentos</h3>
+<p>
+O agronegócio é responsável pela produção de alimentos que chegam diariamente à mesa das famílias.
+</p>
+</div>
+
+<div class="card">
+<h3>Agricultura Moderna</h3>
+<p>
+Máquinas agrícolas e novas técnicas aumentam a produtividade de forma eficiente.
+</p>
+</div>
+
+<div class="card">
+<h3>Economia</h3>
+<p>
+O agronegócio gera empregos, renda e contribui para o crescimento econômico.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="sustentavel" class="reveal">
+<h2>🌎 Futuro Sustentável</h2>
+
+<div class="card-container">
+
+<div class="card">
+<h3>🌳 Preservação Ambiental</h3>
+<p>
+A conservação das florestas e da biodiversidade é essencial para manter o equilíbrio ecológico.
+</p>
+</div>
+
+<div class="card">
+<h3>💧 Uso Consciente da Água</h3>
+<p>
+Sistemas modernos de irrigação ajudam a reduzir desperdícios.
+</p>
+</div>
+
+<div class="card">
+<h3>♻️ Sustentabilidade</h3>
+<p>
+Produzir respeitando os limites da natureza garante recursos para as próximas gerações.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="tecnologia" class="reveal">
+<h2>💡 Tecnologias Sustentáveis</h2>
+
+<div class="card-container">
+
+<div class="card">
+<h3>🚁 Drones</h3>
+<p>
+Monitoram plantações e auxiliam no controle de pragas.
+</p>
+</div>
+
+<div class="card">
+<h3>📡 Sensores Inteligentes</h3>
+<p>
+Coletam dados sobre o solo, temperatura e umidade.
+</p>
+</div>
+
+<div class="card">
+<h3>☀️ Energia Solar</h3>
+<p>
+Fornece energia limpa para propriedades rurais.
+</p>
+</div>
+
+<div class="card">
+<h3>💧 Irrigação Inteligente</h3>
+<p>
+Economiza água e melhora a produtividade agrícola.
+</p>
+</div>
+
+</div>
+</section>
+
+<section class="reveal">
+<h2>📊 Curiosidades</h2>
+
+<div class="card-container">
+
+<div class="card">
+<p>🌎 O Brasil é um dos maiores produtores agrícolas do mundo.</p>
+</div>
+
+<div class="card">
+<p>🚜 A tecnologia aumenta a produtividade e reduz impactos ambientais.</p>
+</div>
+
+<div class="card">
+<p>💧 A agricultura moderna busca economizar água e energia.</p>
+</div>
+
+<div class="card">
+<p>🌱 A sustentabilidade é fundamental para garantir alimentos no futuro.</p>
+</div>
+
+</div>
+</section>
+
+<section id="quiz" class="reveal">
+<h2>📝 Quiz</h2>
+
+<div class="quiz">
+
+<div class="pergunta">
+<h3>1. Qual tecnologia ajuda a monitorar grandes áreas agrícolas?</h3>
+<p>✅ Drones</p>
+</div>
+
+<div class="pergunta">
+<h3>2. Por que economizar água é importante?</h3>
+<p>✅ Porque é um recurso limitado e essencial para a vida.</p>
+</div>
+
+</div>
+</section>
+
+<section class="reveal">
+<h2>🖼️ Galeria</h2>
+
+<div class="galeria">
+<img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854">
+<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef">
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399">
+<img src="https://images.unsplash.com/photo-1472396961693-142e6e269027">
+</div>
+
+</section>
+
+<section class="reveal">
+<h2>✅ Conclusão</h2>
+<p>
+O equilíbrio entre produção agrícola e preservação ambiental é essencial para construir um futuro sustentável. Com responsabilidade, tecnologia e inovação, é possível fortalecer o agronegócio e proteger a natureza ao mesmo tempo.
+</p>
+</section>
+
+<footer>
+<h3>Projeto Agrinho 2026</h3>
+<p>Desenvolvido por Emanuela Beatriz da Silva</p>
+</footer>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+
+function mostrar(){
+    reveals.forEach(item=>{
+        const top = item.getBoundingClientRect().top;
+        const visible = window.innerHeight - 100;
+
+        if(top < visible){
+            item.classList.add('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', mostrar);
+mostrar();
+</script>
+
+</body>
+  </html>
